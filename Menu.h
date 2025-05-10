@@ -2,15 +2,16 @@
 #include <vector>
 #include "Function.h"
 #include "Action.h"
+using namespace std;
 
 class Menu
 {
 private:
 	int Select_Item(int) const;
-	std::vector<Function*> pObj;
-	std::vector<Action*> pAct;
+	vector<Function*> pObj;
+	vector<Action*> pAct;
 public:
-	Menu(std::vector<Function*>, std::vector<Action*>);
+	Menu(vector<Function*>, vector<Action*>);
 	Function* Select_Object() const;
 	Action* Select_Action(Function*) const;
 };

@@ -4,8 +4,8 @@
 using namespace std;
 
 void Line::Set_Coeff() {
-	cout << "Enter a: "; cin >> a;
-	cout << "Enter b: "; cin >> b;
+	cout << "Enter a: "; a = Input_float();;
+	cout << "Enter b: "; b = Input_float();;
 }
 
 //Глобальный объект

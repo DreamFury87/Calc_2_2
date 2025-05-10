@@ -5,13 +5,15 @@
 #include "Tabulation.h"
 #include "Any_Action.h"
 #include "Parabola.h"
+#include "Polynomial.h"
+#include "Gamma.h"
 #include "Exp.h"
 #include "Line.h"
 #include "Menu.h"
 
 using namespace std;
 
-vector<Function*> func_list = { &f_exp, &f_line, &f_parabola };
+vector<Function*> func_list = { &f_exp, &f_line, &f_parabola, &f_polynomial, &f_gamma};
 vector<Action*> act_list = { &calculation, &tabulation, &any_action };
 
 int main()
